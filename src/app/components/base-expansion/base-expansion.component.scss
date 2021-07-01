@@ -4,6 +4,8 @@ BASE EXPANSION
 
 ::ng-deep .base-accordion {
   .mat-expansion-panel {
+    border-radius: 0px !important;
+
     // FIRST
     &:first-of-type {
       border-top-right-radius: 0px !important;
@@ -34,6 +36,10 @@ BASE EXPANSION
     // EXPANSION CONTENT PANEL.
     .mat-expansion-panel-content {
       background-color: rgb(83, 90, 90);
+
+      .mat-expansion-panel-body {
+        padding: 0 !important;
+      }
     }
 
     // PANEL DATA.
