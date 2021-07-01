@@ -6,9 +6,55 @@ BASE EXPANSION
   background-color: aqua !important;
 
   .mat-expansion-panel {
+    // FIRST
     &:first-of-type {
       border-top-right-radius: 0px !important;
       border-top-left-radius: 0px !important;
     }
+
+    // LAST
+    &:last-of-type {
+      border-bottom-right-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+    }
+
+    // HEADER.
+    .mat-expansion-panel-header {
+      padding: 0;
+
+      .mat-content {
+        background-color: aqua !important;
+        height: inherit;
+      }
+    }
+  }
+}
+
+/*
+ADVANCE MULTI LOCATION TITLE
+Multiple Shipping Locations
+*/
+@mixin default-multi-location-title {
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.advance-multi-location-title {
+  .title-size {
+    @include default-multi-location-title;
+    background-color: #9b9b9b !important;
+    color: #fff;
+    width: 70px;
+  }
+  .title-qty {
+    @include default-multi-location-title;
+    background-color: #d9d9d9 !important;
+    width: 90px;
+  }
+  .title-location {
+    @include default-multi-location-title;
+    background-color: rgb(255, 60, 0) !important;
   }
 }

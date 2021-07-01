@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// ANGULAR | FLEX LAYOUT
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 // ANGULAR | CDK  | COMPONENT TEMPLATE
 import { A11yModule } from '@angular/cdk/a11y';
 import { CdkStepperModule } from '@angular/cdk/stepper';
@@ -109,7 +112,8 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule
+    ScrollingModule,
+    FlexLayoutModule
   ],
   declarations: [AppComponent, BaseExpansionComponent],
   bootstrap: [AppComponent]
