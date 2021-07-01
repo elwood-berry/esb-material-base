@@ -49,7 +49,7 @@ Multiple Shipping Locations
 }
 
 .advance-multi-location-title {
-  background-color: rgb(226, 241, 241) !important;
+  background-color: rgb(255, 255, 255) !important;
 
   .title-size {
     @include default-multi-location-title;
@@ -64,7 +64,7 @@ Multiple Shipping Locations
   }
   .title-location {
     @include default-multi-location-title;
-    background-color: rgb(255, 60, 0) !important;
+    background-color: transparent !important;
     width: 115px;
   }
 }
