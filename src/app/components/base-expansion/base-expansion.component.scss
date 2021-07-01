@@ -123,5 +123,10 @@ Multiple Shipping Locations
     padding-top: 10px;
     padding-bottom: 10px;
     border-right: 1px solid #ddd;
+
+    // LAST.
+    &:last-child {
+      border-right: none;
+    }
   }
 }
