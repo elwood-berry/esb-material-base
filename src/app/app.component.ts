@@ -2,8 +2,7 @@
 DEMO 
 */
 import { Component, VERSION, ViewChild } from '@angular/core';
-import { MatAccordion } from '@angular/material/expansion';
-import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component';
+import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component'; // EXPANSION PANEL
 
 //
 @Component({
@@ -13,6 +12,4 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
 })
 
 // CLASS
-export class AppComponent {
-  public panelOpenState = false;
-}
+export class AppComponent {}

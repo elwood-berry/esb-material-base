@@ -1,0 +1,14 @@
+/*
+BASE EXPANSION
+*/
+
+::ng-deep .base-accordion {
+  background-color: aqua !important;
+
+  .mat-expansion-panel {
+    &:first-of-type {
+      border-top-right-radius: 0px !important;
+      border-top-left-radius: 0px !important;
+    }
+  }
+}
