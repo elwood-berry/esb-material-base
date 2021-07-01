@@ -63,6 +63,7 @@ import { AppComponent } from './app.component'; // 1. APP
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     A11yModule,
     ClipboardModule,
