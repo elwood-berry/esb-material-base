@@ -3,8 +3,6 @@ BASE EXPANSION
 */
 
 ::ng-deep .base-accordion {
-  background-color: aqua !important;
-
   .mat-expansion-panel {
     // FIRST
     &:first-of-type {
@@ -23,7 +21,6 @@ BASE EXPANSION
       padding: 0;
 
       .mat-content {
-        background-color: aqua !important;
         height: inherit;
       }
     }
@@ -42,6 +39,8 @@ Multiple Shipping Locations
 }
 
 .advance-multi-location-title {
+  background-color: rgb(226, 241, 241) !important;
+
   .title-size {
     @include default-multi-location-title;
     background-color: #9b9b9b !important;
@@ -56,5 +55,6 @@ Multiple Shipping Locations
   .title-location {
     @include default-multi-location-title;
     background-color: rgb(255, 60, 0) !important;
+    width: 115px;
   }
 }
