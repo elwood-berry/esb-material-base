@@ -66,7 +66,6 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    BaseExpansionComponent,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
@@ -110,10 +109,9 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule,
-    
+    ScrollingModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, BaseExpansionComponent],
   bootstrap: [AppComponent]
 })
 
