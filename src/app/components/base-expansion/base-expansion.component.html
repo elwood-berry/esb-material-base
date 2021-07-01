@@ -3,14 +3,23 @@
     <mat-expansion-panel-header>
       <mat-panel-title>
         <div class="advance-multi-location-title" fxLayout="row">
-          <div class="title-size">Size</div>
-          <div class="title-qty">Quantity</div>
-          <div class="title-location">Location</div>
+          <div class="title-size" fxLayout="column">
+            <span>Size</span>
+            <span>M</span>
+          </div>
+          <div class="title-qty" fxLayout="column">
+            <span>Quantity</span>
+            <span>1,000,000</span>
+          </div>
+          <div class="title-location" fxLayout="column">
+            <span>Location</span>
+            <span>Plano, TX</span>
+          </div>
         </div>
       </mat-panel-title>
 
       <mat-panel-description>
-        <div fxLayout="row">
+        <div class="advance-multi-location-description" fxLayout="row">
           <div>Address</div>
 
           <div fxLayout="row">
@@ -23,10 +32,7 @@
     </mat-expansion-panel-header>
     <p>This is the primary content of the panel.</p>
   </mat-expansion-panel>
-  <mat-expansion-panel
-    (opened)="panelOpenState = true"
-    (closed)="panelOpenState = false"
-  >
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
         Self aware panel
