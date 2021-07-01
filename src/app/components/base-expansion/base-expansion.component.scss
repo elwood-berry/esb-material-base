@@ -120,5 +120,7 @@ Multiple Shipping Locations
 .panel-static-data {
   .static-data {
     @include default-multi-location-title;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
