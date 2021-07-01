@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, VERSION, ViewChild, OnInit } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-base-expansion',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./base-expansion.component.css']
 })
 export class BaseExpansionComponent implements OnInit {
+  //
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

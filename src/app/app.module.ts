@@ -58,6 +58,7 @@ import { MatTreeModule } from '@angular/material/tree';
 
 // COMPONENTS
 import { AppComponent } from './app.component'; // 1. APP
+import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component';
 
 // NG.
 @NgModule({
@@ -65,6 +66,7 @@ import { AppComponent } from './app.component'; // 1. APP
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    BaseExpansionComponent,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
@@ -108,7 +110,8 @@ import { AppComponent } from './app.component'; // 1. APP
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule
+    ScrollingModule,
+    
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
