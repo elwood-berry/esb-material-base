@@ -30,6 +30,10 @@ BASE EXPANSION
         }
       }
     }
+
+    // PANEL DATA.
+    .panel-static-data {
+    }
   }
 }
 
@@ -87,7 +91,7 @@ Multiple Shipping Locations
     // BUTTONS.
     ::ng-deep .mat-button {
       .mat-button-wrapper {
-        color: #02B6BE;
+        color: #02b6be;
         font-size: 14px;
         font-weight: 100;
         text-decoration: underline;
