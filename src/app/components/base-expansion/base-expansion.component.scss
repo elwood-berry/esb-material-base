@@ -2,6 +2,15 @@
 BASE EXPANSION
 */
 
+// MIXINS
+@mixin default-multi-location-title {
+  font-size: 12px;
+  font-weight: 100;
+  padding-top: 5px;
+  text-align: center;
+}
+
+// BASE.
 ::ng-deep .base-accordion {
   .mat-expansion-panel {
     border-radius: 0px !important;
@@ -53,13 +62,6 @@ BASE EXPANSION
 ADVANCE MULTI LOCATION TITLE
 Multiple Shipping Locations
 */
-@mixin default-multi-location-title {
-  font-size: 12px;
-  font-weight: 100;
-  padding-top: 5px;
-  text-align: center;
-}
-
 .advance-multi-location-title {
   background-color: rgb(255, 255, 255) !important;
 
@@ -85,7 +87,6 @@ Multiple Shipping Locations
 ADVANCE MULTI LOCATION DESCRIPTION
 Multiple Shipping Locations
 */
-
 .advance-multi-location-description {
   width: 100%;
 
@@ -109,5 +110,14 @@ Multiple Shipping Locations
         text-decoration: underline;
       }
     }
+  }
+}
+
+/*
+ADVANCE PANEL DATA
+Multiple Shipping Locations
+*/
+.panel-static-data {
+  .static-data {
   }
 }
