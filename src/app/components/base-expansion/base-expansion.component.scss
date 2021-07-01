@@ -53,7 +53,7 @@ BASE EXPANSION
 
     // PANEL DATA.
     .panel-static-data {
-      background-color: aqua;
+      background-color: #ffffff;
     }
   }
 }
@@ -119,5 +119,6 @@ Multiple Shipping Locations
 */
 .panel-static-data {
   .static-data {
+    @include default-multi-location-title;
   }
 }
