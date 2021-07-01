@@ -3,33 +3,44 @@
     <mat-expansion-panel-header>
       <mat-panel-title>
         <div class="advance-multi-location-title" fxLayout="row">
+
+          <!-- SIZE (TITLE) -->
           <div class="title-size" fxLayout="column">
             <span>Size</span>
             <span>M</span>
           </div>
+
+          <!-- QTY (TITLE) -->
           <div class="title-qty" fxLayout="column">
             <span>Quantity</span>
             <span>1,000,000</span>
           </div>
+
+          <!-- LOCATION (TITLE) -->
           <div class="title-location" fxLayout="column">
             <span>Location</span>
             <span>Plano, TX</span>
           </div>
+
         </div>
       </mat-panel-title>
 
       <mat-panel-description>
         <div class="advance-multi-location-description" fxLayout="row">
-        <div class="title-address" fxLayout="column">
-          <span>Address</span>
-          <span>Address</span>
-        </div>
 
-          <div fxLayout="row">
-            <div>Edit</div>
-            <div>Duplicate</div>
-            <div>Delete</div>
+          <!-- ADDRESS (TITLE) -->
+          <div class="title-address" fxLayout="column">
+            <span>Address</span>
+            <span>5445 Legacy Dr Suite #420, Plano, TX 75024</span>
           </div>
+
+          <!-- ACTIONS (TITLE) -->
+          <div fxLayout="row">
+            <button mat-button>Edit</button>
+            <button mat-button>Duplicate</button>
+            <button mat-button>Delete</button>
+          </div>
+
         </div>
       </mat-panel-description>
     </mat-expansion-panel-header>

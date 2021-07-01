@@ -22,6 +22,12 @@ BASE EXPANSION
 
       .mat-content {
         height: inherit;
+
+        .mat-expansion-panel-header-title {
+          flex-grow: initial;
+        }
+        .mat-expansion-panel-header-description {
+        }
       }
     }
   }
