@@ -74,6 +74,14 @@ Multiple Shipping Locations
   width: 100%;
 
   // ADDRESS.
+  .title-address {
+    @include default-multi-location-title;
+    text-align: left;
+  }
 
   // ACTIONS.
+  .title-actions {
+    @include default-multi-location-title;
+    place-content: flex-end !important;
+  }
 }
