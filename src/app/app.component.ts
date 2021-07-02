@@ -1,3 +1,4 @@
+import { newArray } from '@angular/compiler/src/util';
 /*
 DEMO 
 */
@@ -15,4 +16,24 @@ import { JsonPlaceholderService } from './services/json-placeholder/json-placeho
 })
 
 // CLASS
-export class AppComponent {}
+export class AppComponent {
+  // VARIABLE.
+  public data: Array<any>;
+
+  // CONSTRUCTOR.
+  constructor(private JSONPlaceholder: JsonPlaceholderService) {
+    // DEFINE 'DATA'
+    this.data = new Array<any>();
+
+    // TEST 'DATA'
+    this.getDataFromAPI();
+  }
+
+  // SUBSCRIBE 
+  public getDataFromAPI() {
+    // 
+    this.JSONPlaceholder.getData().subscribe(data => {
+      console.log('Data: ', data);
+    });
+  }
+}
