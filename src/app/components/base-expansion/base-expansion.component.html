@@ -1,4 +1,6 @@
-<mat-accordion class="base-accordion">
+<mat-accordion class="base-accordion" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+  <!-- #1 -->
   <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -95,23 +97,199 @@
   </mat-expansion-panel>
 
 
-
-
-  <!-- -->
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <!-- #2 --> 
+  <mat-expansion-panel hideToggle>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Self aware panel
+        <div class="advance-multi-location-title" fxLayout="row">
+
+          <!-- SIZE (TITLE) -->
+          <div class="title-size" fxLayout="column">
+            <span>Size</span>
+            <span>M</span>
+          </div>
+
+          <!-- QTY (TITLE) -->
+          <div class="title-qty" fxLayout="column">
+            <span>Quantity</span>
+            <span>1,000,000</span>
+          </div>
+
+          <!-- LOCATION (TITLE) -->
+          <div class="title-location" fxLayout="column">
+            <span>Location</span>
+            <span>Plano, TX</span>
+          </div>
+
+        </div>
       </mat-panel-title>
+
       <mat-panel-description>
-        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        <div class="advance-multi-location-description" fxLayout="row">
+
+          <!-- ADDRESS (TITLE) -->
+          <div class="title-address" fxLayout="column" fxFlex="70%">
+            <span>Address</span>
+            <span>5445 Legacy Dr Suite #420, Plano, TX 75024</span>
+          </div>
+
+          <!-- ACTIONS (TITLE) -->
+          <div class="title-actions" fxLayout="row" fxFlex="30%" fxLayoutAlign="start stretch">
+            <button mat-button>Edit</button>
+            <button mat-button>Duplicate</button>
+            <button mat-button>Delete</button>
+          </div>
+
+        </div>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>I'm visible because I am open</p>
+
+    <!-- STATIC CONTENT -->
+    <div class="panel-static-data" fxLayout="row">
+      <!-- SHIP DATE -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Ship Date</span>
+        <span>6/15/22</span>
+      </div>
+
+      <!-- IN HAND DATE -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>In Hand Date</span>
+        <span>6/25/22</span>
+      </div>
+
+      <!-- SHIPPING METHOD -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Shipping Method</span>
+        <span>Value</span>
+      </div>
+
+      <!-- TRACKING NO. -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Tracking NO.</span>
+        <span>Value</span>
+      </div>
+
+      <!-- ACCOUNT -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Account</span>
+        <span>Value</span>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Contact</span>
+        <span>Value</span>
+      </div>
+
+      <!-- INSTRUCTIONS -->
+      <div class="static-data" fxLayout="column" fxFlex="14%">
+        <span>Instructions</span>
+        <span>Value</span>
+      </div>
+
+    </div>
+    <!-- [end] -->
+
   </mat-expansion-panel>
 
 
+  <!-- #3 -->
+  <mat-expansion-panel hideToggle (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <div class="advance-multi-location-title" fxLayout="row">
+
+        <!-- SIZE (TITLE) -->
+        <div class="title-size" fxLayout="column">
+          <span>Size</span>
+          <span>M</span>
+        </div>
+
+        <!-- QTY (TITLE) -->
+        <div class="title-qty" fxLayout="column">
+          <span>Quantity</span>
+          <span>1,000,000</span>
+        </div>
+
+        <!-- LOCATION (TITLE) -->
+        <div class="title-location" fxLayout="column">
+          <span>Location</span>
+          <span>Plano, TX</span>
+        </div>
+
+      </div>
+    </mat-panel-title>
+
+    <mat-panel-description>
+      <div class="advance-multi-location-description" fxLayout="row">
+
+        <!-- ADDRESS (TITLE) -->
+        <div class="title-address" fxLayout="column" fxFlex="70%">
+          <span>Address</span>
+          <span>5445 Legacy Dr Suite #420, Plano, TX 75024</span>
+        </div>
+
+        <!-- ACTIONS (TITLE) -->
+        <div class="title-actions" fxLayout="row" fxFlex="30%" fxLayoutAlign="start stretch">
+          <button mat-button>Edit</button>
+          <button mat-button>Duplicate</button>
+          <button mat-button>Delete</button>
+        </div>
+
+      </div>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <!-- STATIC CONTENT -->
+  <div class="panel-static-data" fxLayout="row">
+    <!-- SHIP DATE -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Ship Date</span>
+      <span>6/15/22</span>
+    </div>
+
+    <!-- IN HAND DATE -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>In Hand Date</span>
+      <span>6/25/22</span>
+    </div>
+
+    <!-- SHIPPING METHOD -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Shipping Method</span>
+      <span>Value</span>
+    </div>
+
+    <!-- TRACKING NO. -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Tracking NO.</span>
+      <span>Value</span>
+    </div>
+
+    <!-- ACCOUNT -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Account</span>
+      <span>Value</span>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Contact</span>
+      <span>Value</span>
+    </div>
+
+    <!-- INSTRUCTIONS -->
+    <div class="static-data" fxLayout="column" fxFlex="14%">
+      <span>Instructions</span>
+      <span>Value</span>
+    </div>
+
+  </div>
+  <!-- [end] -->
+
+</mat-expansion-panel>
 
 
 
-</mat-accordion>
+  </mat-accordion>
