@@ -61,7 +61,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 
 // COMPONENTS
-import { AppComponent } from './app.component'; // 1. APP
+import { AppComponent, DialogContentExampleDialog } from './app.component'; // 1. APP
 import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component';
 
 // SERVICES
@@ -121,7 +121,11 @@ import { ProductShippingService } from './services/product-shipping/product-ship
     ScrollingModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, BaseExpansionComponent],
+  declarations: [
+    AppComponent,
+    BaseExpansionComponent,
+    DialogContentExampleDialog
+  ],
   bootstrap: [AppComponent],
   providers: [JsonPlaceholderService, ProductShippingService]
 })

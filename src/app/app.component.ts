@@ -40,6 +40,17 @@ export class AppComponent {
     this.getDataSize();
   }
 
+  // ---
+
+  // OPEN
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
   // GET SIZES
   public getDataSize() {
     console.log('APP', this.sizes.getSizeData());
@@ -57,3 +68,11 @@ export class AppComponent {
     });
   }
 }
+
+
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: './dialog-content-example-dialog.html',
+})
+export class DialogContentExampleDialog {}

@@ -3,10 +3,10 @@
 -->
 <app-base-expansion></app-base-expansion>
 
-<button mat-button (click)="getDataFromAPI()">Basic</button>
+<button mat-button (click)="openDialog()">Basic</button>
 
 <div *ngFor="let size of dataSize">
-{{ size.abbreviation }}
+  {{ size.abbreviation }}
 </div>
 
 <!-- 
