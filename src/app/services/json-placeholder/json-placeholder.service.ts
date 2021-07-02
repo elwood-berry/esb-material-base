@@ -8,6 +8,8 @@ export class JsonPlaceholderService {
 
   // GET DATA.
   public getData(): Observable<any> {
-    return this.http.get<any>();
+    const urlPhotos = 'https://jsonplaceholder.typicode.com/photos';
+
+    return this.http.get<any>(url);
   }
 }
