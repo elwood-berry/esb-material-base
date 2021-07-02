@@ -2,3 +2,14 @@
   DEMO 
 -->
 <app-base-expansion></app-base-expansion>
+
+
+<button mat-button (click)="getDataFromAPI()">Basic</button>
+
+<div *ngFor="let d of data">
+  albumId: {{d.albumId}}
+  id: {{d.id}}
+  thumbnailUrl: {{d.thumbnailUrl}}
+  title: {{d.title}}
+  url: {{d.url}}
+</div>

@@ -29,11 +29,14 @@ export class AppComponent {
     this.getDataFromAPI();
   }
 
-  // SUBSCRIBE 
+  // Get Data From API. 
   public getDataFromAPI() {
-    // 
+    //
     this.JSONPlaceholder.getData().subscribe(data => {
       console.log('Data: ', data);
+
+      //
+      this.data = data;
     });
   }
 }
