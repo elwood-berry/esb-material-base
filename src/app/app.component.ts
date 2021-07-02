@@ -7,6 +7,7 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
 
 // SERVICE(S)
 import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
+import { ProductShippingService } from './services/product-shipping/product-shipping.service';
 
 //
 @Component({
@@ -19,21 +20,32 @@ import { JsonPlaceholderService } from './services/json-placeholder/json-placeho
 export class AppComponent {
   // VARIABLE.
   public data: Array<any>;
+  public dataSize: Array<any>;
 
   // CONSTRUCTOR.
-  constructor(private JSONPlaceholder: JsonPlaceholderService) {
+  constructor(
+    private JSONPlaceholder: JsonPlaceholderService,
+    private sizes: ProductShippingService
+  ) {
     // DEFINE 'DATA'
     this.data = new Array<any>();
+    this.dataSize = new Array<any>();
 
     // TEST 'DATA'
     this.getDataFromAPI();
+    this.getDataSize();
   }
 
-  // Get Data From API. 
+  // GET SIZES
+  public getDataSize() {
+    this.dataSize = this.sizes.getSizeData();
+  }
+
+  // Get Data From API.
   public getDataFromAPI() {
     //
     this.JSONPlaceholder.getData().subscribe(data => {
-      console.log('Data: ', data);
+      // console.log('Data: ', data);
 
       //
       this.data = data;

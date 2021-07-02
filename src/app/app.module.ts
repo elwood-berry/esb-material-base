@@ -66,6 +66,7 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
 
 // SERVICES
 import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
+import { ProductShippingService } from './services/product-shipping/product-shipping.service';
 
 // NG.
 @NgModule({
@@ -122,7 +123,7 @@ import { JsonPlaceholderService } from './services/json-placeholder/json-placeho
   ],
   declarations: [AppComponent, BaseExpansionComponent],
   bootstrap: [AppComponent],
-  providers: [JsonPlaceholderService]
+  providers: [JsonPlaceholderService, ProductShippingService]
 })
 
 // CLASS
