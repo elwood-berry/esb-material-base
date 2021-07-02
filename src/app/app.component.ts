@@ -5,6 +5,9 @@ DEMO
 import { Component, VERSION, ViewChild } from '@angular/core';
 import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component'; // EXPANSION PANEL
 
+// MATERIAL
+import { MatDialog } from '@angular/material/dialog';
+
 // SERVICE(S)
 import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
 import { ProductShippingService } from './services/product-shipping/product-shipping.service';
@@ -25,7 +28,8 @@ export class AppComponent {
   // CONSTRUCTOR.
   constructor(
     private JSONPlaceholder: JsonPlaceholderService,
-    private sizes: ProductShippingService
+    private sizes: ProductShippingService,
+    public dialog: MatDialog
   ) {
     // DEFINE 'DATA'
     this.data = new Array<any>();
@@ -38,7 +42,7 @@ export class AppComponent {
 
   // GET SIZES
   public getDataSize() {
-    console.log("APP", this.sizes.getSizeData());
+    console.log('APP', this.sizes.getSizeData());
     this.dataSize = this.sizes.getSizeData();
   }
 
