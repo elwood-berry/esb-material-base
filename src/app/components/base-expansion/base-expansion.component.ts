@@ -15,4 +15,23 @@ export class BaseExpansionComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  public editProductShipping() {
+    console.log(
+      'editProductShipping()',
+      'I should see a dialog with a form to edit product shipping data.'
+    );
+  }
+  public duplicateProductShipping() {
+    console.log(
+      'duplicateProductShipping()',
+      'I should see a dialog with a confirmation to DUPLICATE THIS product shipping data.'
+    );
+  }
+  public deleteProductShipping() {
+    console.log(
+      'deleteProductShipping()',
+      'I should see a dialog with a confirmation to DELETE THIS product shipping data.'
+    );
+  }
 }

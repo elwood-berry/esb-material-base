@@ -5,6 +5,7 @@
 // ANGULAR
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -63,10 +64,14 @@ import { MatTreeModule } from '@angular/material/tree';
 import { AppComponent } from './app.component'; // 1. APP
 import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component';
 
+// SERVICES  
+import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
+
 // NG.
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     A11yModule,
@@ -116,7 +121,8 @@ import { BaseExpansionComponent } from './components/base-expansion/base-expansi
     FlexLayoutModule
   ],
   declarations: [AppComponent, BaseExpansionComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [JsonPlaceholderService]
 })
 
 // CLASS
