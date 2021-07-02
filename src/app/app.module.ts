@@ -64,7 +64,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { AppComponent } from './app.component'; // 1. APP
 import { BaseExpansionComponent } from './components/base-expansion/base-expansion.component';
 
-// SERVICES  
+// SERVICES
 import { JsonPlaceholderService } from './services/json-placeholder/json-placeholder.service';
 
 // NG.
