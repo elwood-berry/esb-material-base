@@ -1,6 +1,9 @@
 import { Component, VERSION, ViewChild, OnInit } from '@angular/core';
 import { MatAccordion } from '@angular/material/expansion';
 
+// SERVICE(S).
+import { JsonPlaceholderService } from './app/services/json-placeholder.service';
+
 @Component({
   selector: 'app-base-expansion',
   templateUrl: './base-expansion.component.html',
