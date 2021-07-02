@@ -38,6 +38,7 @@ export class AppComponent {
 
   // GET SIZES
   public getDataSize() {
+    console.log("APP", this.sizes.getSizeData());
     this.dataSize = this.sizes.getSizeData();
   }
 

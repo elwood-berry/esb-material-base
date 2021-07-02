@@ -5,6 +5,10 @@
 
 <button mat-button (click)="getDataFromAPI()">Basic</button>
 
+<div *ngFor="let size of dataSize">
+{{ size.abbreviation }}
+</div>
+
 <!-- 
 <div *ngFor="let d of data">
   albumId: {{d.albumId}}
